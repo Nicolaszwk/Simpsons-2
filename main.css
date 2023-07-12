@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 12.5%;
+    background-color: #fdd116;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+header{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+header h2{
+    background-color: #4e8ccb;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+header figure{
+    height: 500px;
+}
+
+nav {
+    background-color: #4e8ccb;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding: 20px;
+    block-size: fit-content;
+}
+
+article h1{
+    color: #f9b80b;
+}
+
+article p{
+    text-align: justify;
+    padding-top: 20px;
+}
+
+#movie-posters{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#movie-posters figure{
+    margin: 16px 0;
+    border: 2px solid #848a81;
+    width: 250px;
+    height: 250px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background-color: #4e8ccb;
+    color: white;
+    margin: 65px 15px 15px;
+    block-size: fit-content;
+}
+
+aside figure{
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+aside img{
+    border: 1px solid white;
+}
+
+aside figcaption{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 10px 0px;
+}
+
+aside h3{
+    font-style: italic;
+    font-size: 1em;
+}
+
+aside p{
+    text-align: justify;
+    padding: 15px;
+    margin: 10px 0 0;
+}
+
+footer {
+    background-color: #2a4fa5;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 767px) {
+    body{
+       padding: 0;
+    }
+
+    header figure{
+        height: unset !important;
+    }
+
+    header img{
+        height: unset !important;
+    }
+
+    nav ul{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #movie-posters{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside{
+        margin: 0 15px 15px;
+    }
+
+  }
+
+  @media screen and (max-width: 1023px) {
+    body{
+        padding: 0;
+     }
+ 
+     header figure{
+         height: unset !important;
+     }
+ 
+     header img{
+         height: unset !important;
+     }
+ 
+     nav ul{
+         flex-direction: column;
+         padding: 10px 0;
+     }
+ 
+     main {
+         flex-direction: column;
+     }
+ 
+     #movie-posters{
+         flex-direction: column;
+         align-items: center;
+     }
+ 
+     aside{
+         margin: 0 15px 15px;
+     }
+ 
+   }
